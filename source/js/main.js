@@ -5,9 +5,12 @@ import Primary from './primary';
 
 import { addLoadEvent } from './util';
 
+import Api from './api';
+
 require('default-passive-events');
 
 addLoadEvent(function () {
-    Viewer.init()
-    Primary.init(window, document)
-})
+    Viewer.init();
+    Api.init();
+    Primary.init(window, document);
+});
